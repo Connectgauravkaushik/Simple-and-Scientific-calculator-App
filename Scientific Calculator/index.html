@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+   
+</head>
+
+<body>
+    <h2 style="text-align: center;">Scientific Calculator</h2>
+    <hr>
+    <div id="display"></div>
+    <div id="grid">
+        <div class="button" onclick="clearDisplay()">Clear</div>
+        <div class="button" onclick="addChar('(')">(</div>
+        <div class="button" onclick="addChar(')')">)</div>
+        <div class="button" onclick="deleteChar('')">X</div>
+        <div class="button" onclick="ChangeSign('')">+/-</div>
+        <div class="button" onclick="addChar('7')">7</div>
+        <div class="button" onclick="addChar('8')">8</div>
+        <div class="button" onclick="addChar('9')">9</div>
+        <div class="button" onclick="addChar('/')">/</div>
+        <div class="button" onclick="addChar('4')">4</div>
+        <div class="button" onclick="addChar('5')">5</div>
+        <div class="button" onclick="addChar('6')">6</div>
+        <div class="button" onclick="addChar('*')">*</div>
+        <div class="button" onclick="addChar('1')">1</div>
+        <div class="button" onclick="addChar('2')">2</div>
+        <div class="button" onclick="addChar('3')">3</div>
+        <div class="button" onclick="addChar('+')">+</div>
+        <div class="button" onclick="addChar('0')">0</div>
+        <div class="button" onclick="addChar('.')">.</div>
+        <div id="equal" class="button" onclick="if(checkExpression()){compute()}">enter</div>
+        <!-- Expression is valid or not -->
+        <div class="button" onclick="addChar('-')">-</div>
+        <div class="button" onclick="if(validExpression()){sqrt()}">sqrt</div> <!-- Expression is valid or not -->
+        <div class="button" onclick="if(checkExpression()){sq()}">sq</div>
+        <div class="button" onclick="if(validExpression()){exp()}">exp</div>
+        <div class="button" onclick="if(validExpression()){ln()}">ln</div>
+        <div class="button" onclick="if(validExpression()){cos()}">cos</div>
+        <div class="button" onclick="if(validExpression()){sin()}">sin</div>
+        <div class="button" onclick="if(validExpression()){tan()}">tan</div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>

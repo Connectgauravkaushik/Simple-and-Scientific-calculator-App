@@ -1,0 +1,51 @@
+html{
+    font-size: 30px;
+}
+h1{
+    text-align: center;
+}
+* {
+    box-sizing: border-box;
+}
+#grid{
+    display: flex;
+    flex-wrap: wrap;
+    width: 360px;
+    margin-left: 670px;
+}
+#grid>*{
+    flex-basis: 24.33%;
+    /* we can set the width as well instead of flex basis  */
+    flex-shrink: 0;
+    /*  If the size of all flex items is larger than the flex container, items shrink to fit according to flex-shrink */
+    flex-grow: 1;
+    /* how much of the flex container's remaining space should be assigned to the flex item's main size */
+    height: 90px;
+    border: 1px solid black;
+    text-align: center;
+    line-height: 95px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+#grid>*:hover {
+    background-color: black;
+    color: white;
+}
+
+#grid>div:last-of-type:hover {
+    background-color: red;
+    color: white;
+}
+
+
+#display {
+    width: 360px;
+    height: 90px;
+    border: 2px solid black;
+    margin-left: 670px;
+
+}
